@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Make a secure payment to Hardwood & Carpet Center online. Multiple payment options available." />
+  <title>Make a Payment | Hardwood & Carpet Center</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <header>
+    <nav class="nav nav--scrolled" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="Hardwood & Carpet Center — Home">
+          <div class="nav__logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="nav__logo-text">
+            <span class="nav__logo-name">Hardwood &amp; Carpet</span>
+            <span class="nav__logo-sub">Center · Atlanta, GA</span>
+          </div>
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About Us</a></li>
+          <li><a href="gallery.html" class="nav__link">Our Work</a></li>
+          <li><a href="estimate.html" class="nav__link">Get Estimate</a></li>
+          <li><a href="payment.html" class="nav__link active">Make a Payment</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="tel:7701231234" class="nav__phone">(770) 123-1234</a>
+          <a href="estimate.html" class="btn btn--primary btn--sm">Free Estimate</a>
+          <button class="nav__hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html" class="nav__mobile-link">Home</a>
+      <a href="about.html" class="nav__mobile-link">About Us</a>
+      <a href="gallery.html" class="nav__mobile-link">Our Work</a>
+      <a href="estimate.html" class="nav__mobile-link">Get Estimate</a>
+      <a href="payment.html" class="nav__mobile-link">Make a Payment</a>
+      <a href="estimate.html" class="btn btn--primary nav__mobile-cta">Request Free Estimate</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <div class="page-hero__content">
+          <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="page-hero__breadcrumb-sep" aria-hidden="true">/</span>
+            <span aria-current="page">Make a Payment</span>
+          </nav>
+          <h1 class="page-hero__title" id="page-title">Make a Payment</h1>
+          <p class="page-hero__subtitle">Pay your invoice securely online — quick, easy, and hassle-free.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Options -->
+    <section class="section" aria-labelledby="payment-heading">
+      <div class="container">
+
+        <div class="section-header section-header--center">
+          <span class="eyebrow">Payment Options</span>
+          <h2 class="section-title" id="payment-heading">Choose How You'd Like to Pay</h2>
+          <p class="section-subtitle">We offer multiple convenient payment methods. All transactions are secure and encrypted.</p>
+        </div>
+
+        <div class="payment-options">
+
+          <div class="payment-option-card reveal">
+            <div class="payment-option-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <h3 class="payment-option-card__title">Credit / Debit Card</h3>
+            <p class="payment-option-card__desc">Pay securely with Visa, Mastercard, American Express, or Discover. Your card details are never stored.</p>
+            <a href="tel:7701231234" class="btn btn--primary" style="width:100%;justify-content:center;">
+              Call to Pay by Card
+            </a>
+          </div>
+
+          <div class="payment-option-card reveal reveal-delay-1">
+            <div class="payment-option-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="payment-option-card__title">Check</h3>
+            <p class="payment-option-card__desc">Make checks payable to <strong>Hardwood &amp; Carpet Center</strong> and mail or bring them to our office address.</p>
+            <a href="estimate.html" class="btn btn--outline-dark" style="width:100%;justify-content:center;">
+              Get Invoice First
+            </a>
+          </div>
+
+          <div class="payment-option-card reveal reveal-delay-2">
+            <div class="payment-option-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="payment-option-card__title">Phone / Zelle</h3>
+            <p class="payment-option-card__desc">Prefer to pay over the phone or via Zelle? Give us a call and we'll walk you through it in minutes.</p>
+            <a href="tel:7701231234" class="btn btn--outline-dark" style="width:100%;justify-content:center;">
+              Call (770) 123-1234
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Payment Form -->
+        <div style="max-width:640px;margin:0 auto;" class="reveal">
+          <div class="form-card">
+            <span class="eyebrow">Online Payment</span>
+            <h3 style="font-family:var(--font-heading);font-size:1.4rem;font-weight:700;color:var(--color-primary);margin-bottom:var(--space-2);">Pay Your Invoice</h3>
+            <p style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:var(--space-6);">Enter your invoice number and payment details below. If you have questions, call us at <a href="tel:7701231234" style="color:var(--color-accent);font-weight:600;">(770) 123-1234</a>.</p>
+
+            <form id="paymentForm" novalidate aria-label="Payment form">
+              <div class="form-grid">
+
+                <div class="form-group">
+                  <label class="form-label" for="invoiceNum">Invoice Number <span class="required" aria-hidden="true">*</span></label>
+                  <input class="form-input" type="text" id="invoiceNum" name="invoiceNum" placeholder="e.g. INV-2025-001" required aria-required="true" />
+                  <span class="form-hint">Find your invoice number on the estimate we sent you.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="payAmount">Payment Amount <span class="required" aria-hidden="true">*</span></label>
+                  <div style="position:relative;">
+                    <span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--color-text-muted);font-weight:500;">$</span>
+                    <input class="form-input" type="number" id="payAmount" name="payAmount" placeholder="0.00" min="1" step="0.01" required aria-required="true" style="padding-left:28px;" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="payerName">Your Full Name <span class="required" aria-hidden="true">*</span></label>
+                  <input class="form-input" type="text" id="payerName" name="payerName" placeholder="John Smith" autocomplete="name" required aria-required="true" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="payerEmail">Email Address <span class="required" aria-hidden="true">*</span></label>
+                  <input class="form-input" type="email" id="payerEmail" name="payerEmail" placeholder="john@example.com" autocomplete="email" required aria-required="true" />
+                  <span class="form-hint">We'll send your payment confirmation here.</span>
+                </div>
+
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="payNotes">Notes (optional)</label>
+                  <textarea class="form-textarea" id="payNotes" name="payNotes" placeholder="e.g. Deposit for hardwood installation — living room" rows="3" style="min-height:80px;"></textarea>
+                </div>
+
+              </div>
+
+              <!-- Security Notice -->
+              <div style="background:var(--color-bg-alt);border-radius:var(--radius-md);padding:var(--space-4);display:flex;gap:var(--space-3);align-items:flex-start;margin:var(--space-5) 0;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2" style="flex-shrink:0;margin-top:1px;" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <p style="font-size:0.8125rem;color:var(--color-text-muted);line-height:1.55;">
+                  <strong style="color:var(--color-primary);">Secure Payment</strong> — Your payment information is encrypted and secure. We do not store card details on our servers. For card payments, we process over the phone to ensure security.
+                </p>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg form-submit" onclick="this.form.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));return false;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Submit Payment
+              </button>
+
+              <div class="form-success" id="paymentSuccess" role="status" aria-live="polite">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Thank you! Your payment request has been received. We'll confirm and process it within 1 business day.
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div style="max-width:640px;margin:var(--space-16) auto 0;" class="reveal">
+          <h3 style="font-family:var(--font-heading);font-size:1.375rem;font-weight:700;color:var(--color-primary);margin-bottom:var(--space-8);text-align:center;">Payment FAQs</h3>
+          <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+            <details style="background:var(--color-white);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-5);">
+              <summary style="font-weight:600;color:var(--color-primary);cursor:pointer;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+                When is payment due?
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <p style="font-size:0.9rem;color:var(--color-text-muted);line-height:1.65;margin-top:var(--space-3);">Payment schedules are outlined in your project estimate. Typically a deposit is collected before work begins, with the remaining balance due upon project completion and your final walkthrough approval.</p>
+            </details>
+            <details style="background:var(--color-white);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-5);">
+              <summary style="font-weight:600;color:var(--color-primary);cursor:pointer;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+                What payment methods do you accept?
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <p style="font-size:0.9rem;color:var(--color-text-muted);line-height:1.65;margin-top:var(--space-3);">We accept cash, personal and business checks, all major credit and debit cards (processed by phone), and Zelle. Please make checks payable to Hardwood &amp; Carpet Center.</p>
+            </details>
+            <details style="background:var(--color-white);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-5);">
+              <summary style="font-weight:600;color:var(--color-primary);cursor:pointer;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+                I don't have my invoice number. What do I do?
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <p style="font-size:0.9rem;color:var(--color-text-muted);line-height:1.65;margin-top:var(--space-3);">No problem — just call us at <a href="tel:7701231234" style="color:var(--color-accent);font-weight:600;">(770) 123-1234</a> or email us and we'll look up your invoice and help you complete your payment.</p>
+            </details>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Help CTA -->
+    <section class="cta-banner" aria-labelledby="help-title">
+      <div class="container">
+        <div class="cta-banner__content reveal">
+          <h2 class="cta-banner__title" id="help-title">Need Help With Your Payment?</h2>
+          <p class="cta-banner__subtitle">Call us and we'll take care of it over the phone — quick and easy.</p>
+          <div class="cta-banner__actions">
+            <a href="tel:7701231234" class="btn btn--primary btn--lg">Call (770) 123-1234</a>
+            <a href="mailto:support@hardwoodcarpetcenter.com" class="cta-banner__phone">support@hardwoodcarpetcenter.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">Hardwood &amp; Carpet Center</p>
+          <p class="footer__brand-desc">Quality hardwood and carpet flooring for homes and businesses in Atlanta and surrounding areas.</p>
+          <div class="footer__badges">
+            <span class="footer__badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Licensed</span>
+            <span class="footer__badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Insured</span>
+          </div>
+        </div>
+        <nav aria-label="Footer navigation">
+          <p class="footer__heading">Pages</p>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="gallery.html" class="footer__link">Our Work</a></li>
+            <li><a href="estimate.html" class="footer__link">Request Estimate</a></li>
+            <li><a href="payment.html" class="footer__link">Make a Payment</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer__heading">Services</p>
+          <ul class="footer__links">
+            <li><a href="estimate.html" class="footer__link">Hardwood Installation</a></li>
+            <li><a href="estimate.html" class="footer__link">Carpet Installation</a></li>
+            <li><a href="estimate.html" class="footer__link">Flooring Replacement</a></li>
+            <li><a href="estimate.html" class="footer__link">Commercial Flooring</a></li>
+          </ul>
+        </div>
+        <address style="font-style:normal;">
+          <p class="footer__heading">Contact</p>
+          <div class="footer__contact-item"><svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.76a16 16 0 0 0 6.29 6.29l1.14-1.14a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg><a href="tel:7701231234" class="footer__link">(770) 123-1234</a></div>
+          <div class="footer__contact-item"><svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:support@hardwoodcarpetcenter.com" class="footer__link">support@hardwoodcarpetcenter.com</a></div>
+          <div class="footer__contact-item"><svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>123 Atlanta Hwy. Atlanta, GA 30070</span></div>
+        </address>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year">2025</span> Hardwood &amp; Carpet Center. All rights reserved.</p>
+        <p>Serving Roswell · Atlanta · Lilburn · Norcross</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const paymentForm = document.getElementById('paymentForm');
+    if (paymentForm) {
+      paymentForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = paymentForm.querySelector('button[type="submit"]');
+        const success = document.getElementById('paymentSuccess');
+        btn.disabled = true;
+        btn.textContent = 'Processing…';
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Submit Payment';
+          paymentForm.reset();
+          if (success) { success.classList.add('visible'); setTimeout(() => success.classList.remove('visible'), 6000); }
+        }, 1500);
+      });
+    }
+  </script>
+</body>
+</html>

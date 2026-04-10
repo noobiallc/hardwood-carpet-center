@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse our portfolio of hardwood and carpet flooring projects across Atlanta, Roswell, Norcross, Lilburn and surrounding areas." />
+  <title>Our Work | Hardwood & Carpet Center</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <header>
+    <nav class="nav nav--scrolled" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="Hardwood & Carpet Center — Home">
+          <div class="nav__logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="nav__logo-text">
+            <span class="nav__logo-name">Hardwood &amp; Carpet</span>
+            <span class="nav__logo-sub">Center · Atlanta, GA</span>
+          </div>
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About Us</a></li>
+          <li><a href="gallery.html" class="nav__link active">Our Work</a></li>
+          <li><a href="estimate.html" class="nav__link">Get Estimate</a></li>
+          <li><a href="payment.html" class="nav__link">Make a Payment</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="tel:7701231234" class="nav__phone">(770) 123-1234</a>
+          <a href="estimate.html" class="btn btn--primary btn--sm">Free Estimate</a>
+          <button class="nav__hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html" class="nav__mobile-link">Home</a>
+      <a href="about.html" class="nav__mobile-link">About Us</a>
+      <a href="gallery.html" class="nav__mobile-link">Our Work</a>
+      <a href="estimate.html" class="nav__mobile-link">Get Estimate</a>
+      <a href="payment.html" class="nav__mobile-link">Make a Payment</a>
+      <a href="estimate.html" class="btn btn--primary nav__mobile-cta">Request Free Estimate</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="--bg-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1920&q=60&auto=format&fit=crop');" aria-labelledby="page-title">
+      <div class="container">
+        <div class="page-hero__content">
+          <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="page-hero__breadcrumb-sep" aria-hidden="true">/</span>
+            <span aria-current="page">Our Work</span>
+          </nav>
+          <h1 class="page-hero__title" id="page-title">Our Work</h1>
+          <p class="page-hero__subtitle">Real projects. Real results. Browse our portfolio of hardwood and carpet installations across the Atlanta area.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="eyebrow">Portfolio</span>
+          <h2 class="section-title" id="gallery-heading">Browse Our Projects</h2>
+          <p class="section-subtitle">Filter by project type to find work similar to what you're planning.</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="gallery-filters" role="group" aria-label="Filter projects by type">
+          <button class="gallery-filter-btn active" data-filter="all">All Projects</button>
+          <button class="gallery-filter-btn" data-filter="hardwood">Hardwood</button>
+          <button class="gallery-filter-btn" data-filter="carpet">Carpet</button>
+          <button class="gallery-filter-btn" data-filter="commercial">Commercial</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="gallery-full-grid" role="list" aria-label="Project portfolio">
+
+          <div class="gallery-full-item reveal" data-category="hardwood" role="listitem">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=85&auto=format&fit=crop" alt="Living room with wide-plank light oak hardwood flooring" loading="lazy" width="800" height="600" />
+            <div class="gallery-full-item__info">
+              <div class="gallery-full-item__tag">Hardwood Installation</div>
+              <div class="gallery-full-item__title">Open-Plan Living Room — Roswell, GA</div>
+            </div>
+          </div>
+
+          <div class="gallery-full-item reveal reveal-delay-1" data-category="carpet" role="listitem">
+            <img src="https://images.unsplash.com/photo-1562113536-f49d30025dd3?w=800&q=85&auto=format&fit=crop" alt="Master bedroom with plush gray carpet installation" loading="lazy" width="800" height="600" />
+            <div class="gallery-full-item__info">
+              <div class="gallery-full-item__tag">Carpet Installation</div>
+              <div class="gallery-full-item__title">Master Bedroom — Atlanta, GA</div>
+            </div>
+          </div>
+
+          <div class="gallery-full-item reveal reveal-delay-2" data-category="hardwood" role="listitem">
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=85&auto=format&fit=crop" alt="Kitchen and dining area with dark walnut hardwood floors" loading="lazy" width="800" height="600" />
+            <div class="gallery-full-item__info">
+              <div class="gallery-full-item__tag">Hardwood Installation</div>
+              <div class="gallery-full-item__title">Kitchen & Dining — Norcross, GA</div>
+            </div>
+          </div>
+
+          <div class="gallery-full-item reveal" data-category="commercial" role="listitem">
+            <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=85&auto=format&fit=crop" alt="Commercial office space with engineered hardwood flooring" loading="lazy" width="800" height="600" />
+            <div class="gallery-full-item__info">
+              <div class="gallery-full-item__tag">Commercial</div>
+              <div class="gallery-full-item__title">Corporate Office — Lilburn, GA</div>
+            </div>
+          </div>
+
+          <div class="gallery-full-item reveal reveal-delay-1" data-category="hardwood" role="listitem">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=85&auto=format&fit=crop" alt="Dining room with rich mahogany hardwood flooring" loading="lazy" width="800" height="600" />
+            <div class="gallery-full-item__info">
+              <div class="gallery-full-item__tag">Hardwood Installation</div>
+              <div class="gallery-full-item__title">Formal Dining Room — Atlanta, GA</div>
+            </div>
+          </div>
+
+          <div class="gallery-full-item reveal reveal-delay-2" data-category="carpet" role="listitem">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85&auto=format&fit=crop" alt="Children's bedroom with soft, comfortable carpet" loading="lazy" width="800" height="600" />
+            <div class="gallery-full-item__info">
+              <div class="gallery-full-item__tag">Carpet Installation</div>
+              <div class="gallery-full-item__title">Bedroom Suite — Roswell, GA</div>
+            </div>
+          </div>
+
+          <div class="gallery-full-item reveal" data-category="hardwood" role="listitem">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=85&auto=format&fit=crop" alt="Modern home entryway with herringbone hardwood pattern" loading="lazy" width="800" height="600" />
+            <div class="gallery-full-item__info">
+              <div class="gallery-full-item__tag">Hardwood Installation</div>
+              <div class="gallery-full-item__title">Entryway Herringbone — Norcross, GA</div>
+            </div>
+          </div>
+
+          <div class="gallery-full-item reveal reveal-delay-1" data-category="commercial" role="listitem">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=85&auto=format&fit=crop" alt="Retail store with polished hardwood flooring throughout" loading="lazy" width="800" height="600" />
+            <div class="gallery-full-item__info">
+              <div class="gallery-full-item__tag">Commercial</div>
+              <div class="gallery-full-item__title">Retail Space — Atlanta, GA</div>
+            </div>
+          </div>
+
+          <div class="gallery-full-item reveal reveal-delay-2" data-category="hardwood" role="listitem">
+            <img src="https://images.unsplash.com/photo-1560185008-b033106af5c3?w=800&q=85&auto=format&fit=crop" alt="Staircase with matching hardwood treads and risers" loading="lazy" width="800" height="600" />
+            <div class="gallery-full-item__info">
+              <div class="gallery-full-item__tag">Hardwood Installation</div>
+              <div class="gallery-full-item__title">Staircase & Landing — Lilburn, GA</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-banner__content reveal">
+          <h2 class="cta-banner__title" id="cta-title">Like What You See?</h2>
+          <p class="cta-banner__subtitle">Let's talk about your project and get you a free, no-obligation estimate.</p>
+          <div class="cta-banner__actions">
+            <a href="estimate.html" class="btn btn--primary btn--lg">Request Free Estimate</a>
+            <a href="tel:7701231234" class="cta-banner__phone">(770) 123-1234</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">Hardwood &amp; Carpet Center</p>
+          <p class="footer__brand-desc">Quality hardwood and carpet flooring for homes and businesses in Atlanta and surrounding areas.</p>
+          <div class="footer__badges">
+            <span class="footer__badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Licensed</span>
+            <span class="footer__badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Insured</span>
+          </div>
+        </div>
+        <nav aria-label="Footer navigation">
+          <p class="footer__heading">Pages</p>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="gallery.html" class="footer__link">Our Work</a></li>
+            <li><a href="estimate.html" class="footer__link">Request Estimate</a></li>
+            <li><a href="payment.html" class="footer__link">Make a Payment</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer__heading">Services</p>
+          <ul class="footer__links">
+            <li><a href="estimate.html" class="footer__link">Hardwood Installation</a></li>
+            <li><a href="estimate.html" class="footer__link">Carpet Installation</a></li>
+            <li><a href="estimate.html" class="footer__link">Flooring Replacement</a></li>
+            <li><a href="estimate.html" class="footer__link">Commercial Flooring</a></li>
+          </ul>
+        </div>
+        <address style="font-style:normal;">
+          <p class="footer__heading">Contact</p>
+          <div class="footer__contact-item"><svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.76a16 16 0 0 0 6.29 6.29l1.14-1.14a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg><a href="tel:7701231234" class="footer__link">(770) 123-1234</a></div>
+          <div class="footer__contact-item"><svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:support@hardwoodcarpetcenter.com" class="footer__link">support@hardwoodcarpetcenter.com</a></div>
+          <div class="footer__contact-item"><svg class="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>123 Atlanta Hwy. Atlanta, GA 30070</span></div>
+        </address>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year">2025</span> Hardwood &amp; Carpet Center. All rights reserved.</p>
+        <p>Serving Roswell · Atlanta · Lilburn · Norcross</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

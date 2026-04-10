@@ -242,6 +242,10 @@ input, textarea, select {
   width: auto;
   display: block;
 }
+/* On dark hero, add subtle shadow so logo text remains legible */
+.nav--transparent .nav__logo-img {
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.5));
+}
 
 .nav__links {
   display: none;

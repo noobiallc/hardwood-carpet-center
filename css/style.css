@@ -238,13 +238,15 @@ input, textarea, select {
   flex-shrink: 0;
 }
 .nav__logo-img {
-  height: 56px;
+  height: 52px;
   width: auto;
+  max-width: 180px;
   display: block;
+  object-fit: contain;
 }
 /* On dark hero, add subtle shadow so logo text remains legible */
 .nav--transparent .nav__logo-img {
-  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.45));
 }
 
 .nav__links {

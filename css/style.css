@@ -212,7 +212,7 @@ input, textarea, select {
   transition: background var(--transition-base), box-shadow var(--transition-base);
 }
 .nav--transparent {
-  background: transparent;
+  background: var(--color-white);
 }
 .nav--scrolled {
   background: var(--color-white);
@@ -244,10 +244,6 @@ input, textarea, select {
   display: block;
   object-fit: contain;
 }
-/* On dark hero, add subtle shadow so logo text remains legible */
-.nav--transparent .nav__logo-img {
-  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.45));
-}
 
 .nav__links {
   display: none;
@@ -264,7 +260,7 @@ input, textarea, select {
   color: var(--color-primary);
   transition: color var(--transition-base), background var(--transition-base);
 }
-.nav--transparent .nav__link { color: rgba(255,255,255,0.85); }
+.nav--transparent .nav__link { color: var(--color-primary); }
 .nav--scrolled .nav__link { color: var(--color-primary); }
 .nav__link:hover { color: var(--color-accent); background: rgba(255,99,51,0.06); }
 .nav__link.active { color: var(--color-accent); }
@@ -281,7 +277,7 @@ input, textarea, select {
   color: var(--color-primary);
   transition: color var(--transition-base);
 }
-.nav--transparent .nav__phone { color: rgba(255,255,255,0.9); }
+.nav--transparent .nav__phone { color: var(--color-primary); }
 @media (min-width: 768px) { .nav__phone { display: block; } }
 .nav__phone:hover { color: var(--color-accent); }
 
@@ -303,7 +299,7 @@ input, textarea, select {
   border-radius: 2px;
   transition: transform var(--transition-smooth), opacity var(--transition-base);
 }
-.nav--transparent .nav__hamburger span { background: var(--color-white); }
+.nav--transparent .nav__hamburger span { background: var(--color-primary); }
 .nav--scrolled .nav__hamburger span { background: var(--color-primary); }
 .nav__hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav__hamburger.open span:nth-child(2) { opacity: 0; }

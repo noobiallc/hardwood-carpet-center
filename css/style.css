@@ -345,7 +345,7 @@ input, textarea, select {
 /* ---- Hero ---- */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -373,7 +373,7 @@ input, textarea, select {
 .hero__content {
   position: relative;
   z-index: 1;
-  padding: var(--space-32) 0 var(--space-20);
+  padding: var(--space-32) 0 var(--space-12);
   width: 100%;
 }
 .hero__eyebrow {

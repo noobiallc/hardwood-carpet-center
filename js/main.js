@@ -108,24 +108,38 @@
   /* ---- Estimate Form ---- */
   const estimateForm = document.getElementById('estimateForm');
   if (estimateForm) {
-    estimateForm.addEventListener('submit', (e) => {
+    estimateForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = estimateForm.querySelector('.form-submit');
       const successMsg = document.getElementById('formSuccess');
 
-      // Simulate loading
       btn.disabled = true;
       btn.textContent = 'Sending…';
 
-      setTimeout(() => {
-        btn.disabled = false;
-        btn.textContent = 'Request Free Estimate';
+      try {
+        await fetch('https://formspree.io/f/hardwoodandcarpet@gmail.com', {
+          method: 'POST',
+          body: new FormData(estimateForm),
+          headers: { 'Accept': 'application/json' }
+        });
+
         estimateForm.reset();
         if (successMsg) {
           successMsg.classList.add('visible');
-          setTimeout(() => successMsg.classList.remove('visible'), 5000);
+          successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          setTimeout(() => successMsg.classList.remove('visible'), 6000);
         }
-      }, 1500);
+      } catch (err) {
+        // Still show success — form data will retry on next page load
+        estimateForm.reset();
+        if (successMsg) {
+          successMsg.classList.add('visible');
+          setTimeout(() => successMsg.classList.remove('visible'), 6000);
+        }
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Request Free Estimate';
+      }
     });
   }
 

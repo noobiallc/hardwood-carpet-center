@@ -238,9 +238,9 @@ input, textarea, select {
   flex-shrink: 0;
 }
 .nav__logo-img {
-  height: 64px;
+  height: 96px;
   width: auto;
-  max-width: 260px;
+  max-width: 390px;
   display: block;
   object-fit: contain;
 }

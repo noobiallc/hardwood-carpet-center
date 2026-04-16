@@ -176,7 +176,7 @@
     });
   }
 
-  /* ---- Estimate Form ---- */
+  /* ---- Estimate Form (Netlify Forms) ---- */
   const estimateForm = document.getElementById('estimateForm');
   if (estimateForm) {
     estimateForm.addEventListener('submit', async (e) => {
@@ -188,11 +188,13 @@
       btn.textContent = 'Sending…';
 
       try {
-        await fetch('https://formspree.io/f/hardwoodandcarpet@gmail.com', {
+        const response = await fetch('/', {
           method: 'POST',
-          body: new FormData(estimateForm),
-          headers: { 'Accept': 'application/json' }
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(estimateForm)).toString()
         });
+
+        if (!response.ok) throw new Error('Submission failed');
 
         estimateForm.reset();
         if (successMsg) {
@@ -201,12 +203,7 @@
           setTimeout(() => successMsg.classList.remove('visible'), 6000);
         }
       } catch (err) {
-        // Still show success — form data will retry on next page load
-        estimateForm.reset();
-        if (successMsg) {
-          successMsg.classList.add('visible');
-          setTimeout(() => successMsg.classList.remove('visible'), 6000);
-        }
+        alert('Something went wrong. Please try again or call us at (678) 982-5327.');
       } finally {
         btn.disabled = false;
         btn.textContent = 'Request Free Estimate';

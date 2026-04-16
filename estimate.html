@@ -148,7 +148,9 @@
               <span class="eyebrow" style="margin-bottom:var(--space-2);">Free Estimate</span>
               <h3 style="font-family:var(--font-heading);font-size:1.5rem;font-weight:700;color:var(--color-primary);margin-bottom:var(--space-6);">Tell Us About Your Project</h3>
 
-              <form id="estimateForm" novalidate aria-label="Estimate request form">
+              <form id="estimateForm" name="estimate-request" data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-label="Estimate request form">
+                <input type="hidden" name="form-name" value="estimate-request" />
+                <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
                 <div class="form-grid form-grid--2col">
 
                   <div class="form-group">

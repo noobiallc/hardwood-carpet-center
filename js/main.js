@@ -29,8 +29,8 @@
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
-    // Close on mobile link click
-    navMobile.querySelectorAll('.nav__mobile-link').forEach(link => {
+    // Close on mobile link or CTA click
+    navMobile.querySelectorAll('.nav__mobile-link, .nav__mobile-cta').forEach(link => {
       link.addEventListener('click', () => {
         navMobile.classList.remove('open');
         navHamburger.classList.remove('open');
@@ -184,8 +184,9 @@
       const btn = estimateForm.querySelector('.form-submit');
       const successMsg = document.getElementById('formSuccess');
 
+      const originalHTML = btn.innerHTML;
       btn.disabled = true;
-      btn.textContent = 'Sending…';
+      btn.innerHTML = 'Sending…';
 
       try {
         const response = await fetch('/', {
@@ -206,7 +207,7 @@
         alert('Something went wrong. Please try again or call us at (678) 982-5327.');
       } finally {
         btn.disabled = false;
-        btn.textContent = 'Request Free Estimate';
+        btn.innerHTML = originalHTML;
       }
     });
   }

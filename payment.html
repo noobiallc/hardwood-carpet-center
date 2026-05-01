@@ -3,24 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Make a secure payment to Hardwood & Carpet Center online. Powered by Stripe." />
+  <meta name="description" content="Securely pay your Hardwood & Carpet Center invoice online. Quick, safe payment processing for your flooring project in Metro Atlanta." />
   <link rel="canonical" href="https://www.hardwoodandcarpet.com/payment.html" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Hardwood & Carpet Center" />
-  <meta property="og:title" content="Make a Payment | Hardwood & Carpet Center" />
-  <meta property="og:description" content="Make a secure payment to Hardwood & Carpet Center online. Powered by Stripe." />
+  <meta property="og:title" content="Make a Payment | Hardwood & Carpet Center | Atlanta, GA" />
+  <meta property="og:description" content="Securely pay your Hardwood & Carpet Center invoice online. Quick, safe payment processing for your flooring project in Metro Atlanta." />
   <meta property="og:url" content="https://www.hardwoodandcarpet.com/payment.html" />
   <meta property="og:image" content="https://www.hardwoodandcarpet.com/images/pic-1.jpg" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Make a Payment | Hardwood & Carpet Center" />
-  <meta name="twitter:description" content="Make a secure payment to Hardwood & Carpet Center online. Powered by Stripe." />
+  <meta name="twitter:title" content="Make a Payment | Hardwood & Carpet Center | Atlanta, GA" />
+  <meta name="twitter:description" content="Securely pay your Hardwood & Carpet Center invoice online. Quick, safe payment processing for your flooring project in Metro Atlanta." />
   <meta name="twitter:image" content="https://www.hardwoodandcarpet.com/images/pic-1.jpg" />
-  <title>Make a Payment | Hardwood & Carpet Center</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Make a Payment | Hardwood & Carpet Center | Atlanta, GA</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <meta name="theme-color" content="#1a5c3a" />
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
   <style>
     /* ---- Payment Page Specific ---- */
     .payment-hero {
@@ -328,14 +344,14 @@
         </ul>
         <div class="nav__actions">
           <a href="estimate.html" class="btn btn--primary btn--sm">Request Free Estimate</a>
-          <a href="tel:6789825327" class="nav__phone">(678) 982-5327</a>
+          <a href="tel:6789825327" class="nav__phone" aria-label="Call us at (678) 982-5327">(678) 982-5327</a>
           <button class="nav__hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
             <span></span><span></span><span></span>
           </button>
         </div>
       </div>
     </nav>
-    <div class="nav__mobile" id="mobileMenu">
+    <div class="nav__mobile" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
       <a href="index.html" class="nav__mobile-link">Home</a>
       <a href="about.html" class="nav__mobile-link">About Us</a>
       <a href="gallery.html" class="nav__mobile-link">Our Work</a>
@@ -417,7 +433,7 @@
                 <p class="payment-card__cta-label">Ready to pay your invoice?</p>
 
                 <a
-                  href="https://buy.stripe.com/test_5kQ8wQ1edeBd3RQ02x7Re00"
+                  href="https://buy.stripe.com/28EaEY06XbDs3ndeN73Je01"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="payment-card__btn"

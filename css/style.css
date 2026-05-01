@@ -2,9 +2,6 @@
    HARDWOOD & CARPET CENTER — Global Stylesheet
    ============================================================ */
 
-/* ---- Google Fonts ---- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
-
 /* ---- Design Tokens ---- */
 :root {
   --color-primary:       #1a0f06;
@@ -1349,7 +1346,7 @@ input, textarea, select {
   padding: var(--space-12) var(--space-6);
 }
 .legal-body h2 {
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-primary);
